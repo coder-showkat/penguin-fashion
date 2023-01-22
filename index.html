@@ -28,6 +28,21 @@
                     width: {
                         container: '90%',
                         container2: '85%',
+                    },
+                    keyframes: {
+                        scale: {
+                            '0%, 100%': {
+                                transform: 'scale(100%)',
+                                backgroundImage: 'linear-gradient(to bottom, #A4BC46, #85A019)',
+                            },
+                            '50%': {
+                                transform: 'scale(110%)',
+                                backgroundImage: 'linear-gradient(to top, #A4BC46, #85A019)',
+                            },
+                        }
+                    },
+                    animation: {
+                        scale: 'scale 1s ease-in-out infinite',
                     }
                 },
                 fontFamily: {
@@ -42,7 +57,7 @@
 <body class="font-roboto">
     <header class="bg-[#FFFBF0]">
         <div class="w-container md:w-container2 mx-auto">
-            <div class="fixed left-0 top-0 right-0 bg-[#FFFBF0]">
+            <div class="fixed left-0 top-0 right-0 bg-[#FFFBF0] z-10">
                 <nav
                     class="w-container md:w-container2 mx-auto flex flex-col gap-3 lg:flex-row justify-between items-center px-1 py-5 relative">
                     <div class="self-start">
@@ -66,7 +81,7 @@
                         <p class="text-secondary max-w-[400px] mb-2">Lorem Ipsum is simply dummy text of the printing
                             and typesetting industry.</p>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                     <div class="w-full md:w-1/2 py-3">
@@ -92,7 +107,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
@@ -106,7 +121,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
@@ -120,7 +135,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
@@ -142,7 +157,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
@@ -156,7 +171,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
@@ -170,7 +185,7 @@
                     <div class="flex justify-between items-center">
                         <h2 class="text-4xl font-extrabold text-yellow">$234</h2>
                         <button
-                            class="uppercase text-white py-3 px-5 bg-linear rounded-md hover:scale-105 hover:bg-linearhover ease-in duration-200"><i
+                            class="uppercase text-white py-3 px-5 bg-linear rounded-md animate-scale"><i
                                 class="fa-solid fa-cart-shopping"></i> Buy Now</button>
                     </div>
                 </div>
