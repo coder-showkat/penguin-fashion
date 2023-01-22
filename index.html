@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -65,15 +65,18 @@
                     </div>
                     <div id="toggler"><i class="fa-solid fa-bars text-lg absolute top-7 right-0 lg:hidden"></i></div>
                     <ul class="hidden lg:!flex gap-2 flex-col lg:flex-row self-start lg:self-center" id="navbar">
-                        <li><a href="#" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Home</a></li>
-                        <li><a href="#" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Product</a></li>
-                        <li><a href="#" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">About us</a></li>
-                        <li><a href="#" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Contact us</a></li>
+                        <li><a href="#home" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Home</a></li>
+                        <li><a href="#product1" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Women's
+                                Fashion</a></li>
+                        <li><a href="#product2" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Man's
+                                Fashion</a></li>
+                        <li><a href="#services" class="px-3 py-2 font-roboto font-medium text-[#3C3C3C]">Services</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
-            <section class="pt-24">
+            <section class="pt-24" id="home">
                 <div class="flex flex-col md:flex-row gap-5 items-center py-5">
                     <div class="w-full md:w-1/2">
                         <h1 class="font-bebas text-6xl lg:text-7xl mb-5 text-yellow">Be the Penguins</h1>
@@ -93,7 +96,7 @@
 
     <main class="w-container md:w-container2 mx-auto">
         <!-- Women Jacket -->
-        <section class="mt-28">
+        <section class="pt-28" id="product1">
             <h1 class="text-primary font-bebas text-5xl mb-9">Women Jacket</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="shadow-sm rounded-lg overflow-hidden px-3 py-5">
@@ -140,7 +143,7 @@
 
         </section>
         <!-- Man Jacket -->
-        <section class="mt-28">
+        <section class="pt-28" id="product2">
             <h1 class="text-primary font-bebas text-5xl mb-9">Man Jacket</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="shadow-sm rounded-lg overflow-hidden px-3 py-5">
@@ -187,7 +190,7 @@
         </section>
 
         <!-- Service Section -->
-        <section class="mt-28">
+        <section class="pt-28" id="services">
             <div class="flex flex-col-reverse md:flex-row items-center gap-12">
                 <div class="w-full md:w-1/2 flex flex-col gap-4">
                     <div class="flex gap-6 w-full items-center p-5 shadow-md rounded-lg">
@@ -237,6 +240,13 @@
             }
 
         })
+        for (i = 0; i < navbar.children.length; i++) {
+            navbar.children[i].addEventListener('click', () => {
+                navbar.style.display = 'none';
+                isToggled = false;
+            })
+        }
+
     </script>
 </body>
 
